@@ -20,7 +20,7 @@ Welcome to my WezTerm configuration repository! This setup optimizes your termin
 Clone the repository to set up WezTerm with my custom configuration:
 
 ```bash
-git clone https://github.com/yourusername/yourrepo.git ~/.config/wezterm
+git clone https://github.com/MowlandCodes/my-wezterm-config.git ~/.config/wezterm
 ```
 
 ### Requirements
