@@ -1,5 +1,4 @@
 local wezterm = require("wezterm")
-local gpus = wezterm.gui.enumerate_gpus()
 
 -- This will hold the configuration.
 local act = wezterm.action
@@ -39,11 +38,11 @@ config.show_tab_index_in_tab_bar = true
 config.window_close_confirmation = "NeverPrompt"
 config.unicode_version = 15
 config.window_background_opacity = 0.85
-config.webgpu_preferred_adapter = gpus[0]
+config.webgpu_preferred_adapter = wezterm.gui.enumerate_gpus()[0]
 config.front_end = "WebGpu"
 
 -- Font Styles
-config.font = font("JetBrainsMonoNL Nerd Font")
+config.font = font("JetBrainsMono NF")
 config.harfbuzz_features = {
 	"liga = 1",
 }
