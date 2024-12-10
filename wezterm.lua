@@ -73,8 +73,9 @@ config.leader = { key = "Space", mods = "CTRL", timeout_milliseconds = 2000 }
 config.keys = {
 
 	---------------------- Window Management ----------------------
-	{ mods = "CTRL", key = "f", action = act.SendString "fd . 'C:\\\\' -t d --hidden | fzf | cd\r\n" },
-	{ mods = "ALT", key = "c", action = act.SendString "fd . 'C:\\\\' -t f --hidden | fzf | clip\r\n" },
+	{ mods = "CTRL", key = "f", action = act.SendString "fzf\r\n" }, -- Search for entire Computer Files
+	{ mods = "CTRL|SHIFT", key = "f", action = act.SendString "fd . --type f --hidden | fzf\r\n" }, -- Search for files in current directory 
+
 	{ mods = "CTRL|SHIFT", key = "p", action = act.ActivateCommandPalette },
 	-- Open new Wezterm Window
 	{
