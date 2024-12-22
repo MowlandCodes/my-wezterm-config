@@ -33,7 +33,7 @@ config.adjust_window_size_when_changing_font_size = false
 config.audible_bell = "Disabled"
 config.initial_cols = 110
 config.initial_rows = 35
-config.window_decorations = "RESIZE"
+config.window_decorations = "NONE"
 config.show_tab_index_in_tab_bar = true
 config.window_close_confirmation = "NeverPrompt"
 config.unicode_version = 15
@@ -59,7 +59,7 @@ config.cursor_blink_ease_out = "EaseOut"
 config.force_reverse_video_cursor = false
 
 -- Default Terminal
-config.default_prog = { "pwsh.exe -nologo" }
+config.default_prog = { "zsh" }
 config.default_cwd = os.getenv("PWD")
 
 ----------------------------------------------------- Tab Styles -------------------------------------------------------
