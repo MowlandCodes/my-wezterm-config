@@ -81,7 +81,7 @@ config.keys = {
 	{
 		mods = "LEADER",
 		key = "n",
-		action = act.SpawnCommandInNewWindow({ args = { "pwsh.exe -nologo" }, cwd = default_cwd }),
+		action = act.SpawnCommandInNewWindow({ args = { "zsh" }, cwd = default_cwd }),
 	},
 	{ mods = "LEADER|SHIFT", key = "Q", action = act.QuitApplication },
 	-- Scrolling using Shortcut
@@ -111,7 +111,7 @@ config.keys = {
 	{
 		mods = "LEADER",
 		key = "t",
-		action = act.SpawnCommandInNewTab({ args = { "pwsh.exe -nologo" }, cwd = default_cwd }),
+		action = act.SpawnCommandInNewTab({ args = { "zsh" }, cwd = default_cwd }),
 	},
 
 	-- Navigate through Tabs Relatively
