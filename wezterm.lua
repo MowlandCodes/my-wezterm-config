@@ -136,6 +136,8 @@ config.keys = {
 	{ mods = "CTRL|SHIFT", key = "DownArrow", action = act.AdjustPaneSize({ "Down", 1 }) },
 	{ mods = "CTRL|SHIFT", key = "LeftArrow", action = act.AdjustPaneSize({ "Left", 1 }) },
 	{ mods = "CTRL|SHIFT", key = "RightArrow", action = act.AdjustPaneSize({ "Right", 1 }) },
+	{ mods = "CTRL", key = "LeftArrow", action = act.SendString "\x1bb" }, -- Navigate left 1 word
+	{ mods = "CTRL", key = "RightArrow", action = act.SendString "\x1bf" }, -- Navigate right 1 word
 }
 
 -- For navigate through tabs based on Index
