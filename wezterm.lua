@@ -22,7 +22,7 @@ config.window_padding = {
 	left = 5,
 	right = 5,
 	top = 5,
-	bottom = 5,
+	bottom = 0.5,
 }
 
 config.scrollback_lines = 100000
