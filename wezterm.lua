@@ -155,7 +155,7 @@ wezterm.on("update-right-status", function(window, _)
 	local prefix = ""
 
 	if window:leader_is_active() then
-		prefix = " " .. utf8.char(0x1f480)
+		prefix = " " .. utf8.char(0x1f47e) .. " "
 		SOLID_LEFT_ARROW = utf8.char(0xe0b2)
 
         if window:active_tab():tab_id() ~= 0 then
